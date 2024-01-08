@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Learn HTML Forms</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <h1>Contact</h1>
+
+  <!-- Your form goes here -->
+  <form id="nameForm" action="https://learn-forms.netlify.com/submit/part3">
+    <label for="name">Enter your name:</label>
+    <input id="name" type="text" name="name" placeholder="Name" value="">
+    <br />
+    <label for="email">Email:</label>
+    <input id="email" type="email" name="email" placeholder="Enter your email" value="hello@oliverjam.es" required>
+    <br />
+    <label for="tel">Telephone:</label>
+    <input id="tel" type="tel" name="tel" placeholder="Enter your phone number" value="012345678" required>
+    <br />
+    <label for="messageTextarea">Message:</label>
+    <textarea id="messageTextarea" name="message" placeholder="Enter your message" rows="3" required></textarea>
+    <br />
+    <label>
+      <input type="checkbox" name="marketingConsent" value="on" checked> I consent to receive marketing messages
+    </label>
+    <br />
+    <br />
+
+    <fieldset>
+      <legend>Preferred contact method:</legend>
+
+
+      <input type="radio" id="emailContact" name="contact" value="email" checked>
+      <label for="emailContact">Email</label>
+
+
+      <input type="radio" id="phoneContact" name="contact" value="phone">
+      <label for="phoneContact">Phone</label>
+
+      <input type="radio" id="radioChoice" name="contact" value="post">
+      <label for="radioChoice">Post</label>
+
+    </fieldset>
+    <br />
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
+</html>
